@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<script type="text/javascript">
+			var f=function (x,y) {
+				return {x:x,y:y}
+			}
+			var sz=function (x,y,z) {
+				switch (z){
+					case '+':
+						return x+y;
+						break;
+					case '-':
+						return x-y;
+						break;
+					case '*':
+						return x*y;
+						break;
+					case '/':
+						return x/y;
+						break;
+				}
+			}
+			alert(sz(1,1,'+'))
+		</script>
+	</body>
+</html>
