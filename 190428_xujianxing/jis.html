@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		
+		
+		<script type="text/javascript">
+			//apply
+			function cc () {
+				var num=0;
+				for (var i in arguments) {
+					num+=arguments[i];
+				}
+				return num;
+			}
+			function dd () {
+				return cc.apply(this,arguments)
+			}
+			alert(dd(1,2,3,4))
+			
+			//call
+			function bb (arr) {
+				var num=0;
+				for (var i in arr) {
+					num+=arr[i];
+				}
+				return num;
+			}
+			function aa () {
+				return bb.call(this,arguments)
+			}
+			alert(aa(1,2,3,4))
+			
+			//Math.max
+			var a=[1,4,2,6,8,0]
+			var c=Math.max.apply(Math,a)
+			alert(c)
+		</script>
+	</body>
+</html>
+ 
