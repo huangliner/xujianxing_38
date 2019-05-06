@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			button{
+				margin:0 10px;
+				width: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="position: absolute;">
+			<button id="but1">q</button>
+			<button id="but2">w</button>
+			<button id="but3">e</button>
+			<button id="but4">r</button>
+		</div>
+		
+		<script type="text/javascript">
+			function $(id) {
+				return document.getElementById(id);
+			}
+			var but1=$('but1');
+			var but2=$('but2');
+			var but3=$('but3');
+			var but4=$('but4');
+			
+			function xujianxing (name) {
+				this.name;
+				
+				this.q=function  () {
+					if (ad==0) {
+						alert(this.name+'用了Q');
+					}
+				}
+				this.zx=function  () {
+					window.onkeydown=function (e) {
+						switch (e.keyCode){
+							case 81:alert(this.name+'用了Q');break;
+							case 87:alert(this.name+'用了W');break;
+							case 69:alert(this.name+'用了E');break;
+							case 82:alert(this.name+'用了R');break;
+						}
+					}
+					but1.onclick=function  () {
+						alert(this.name+'用了Q')
+					}
+					but2.onclick=function  () {
+						alert(this.name+'用了W')
+					}
+					but3.onclick=function  () {
+						alert(this.name+'用了E')
+					}
+					but4.onclick=function  () {
+						alert(this.name+'用了R')
+					}
+				}	
+			}
+			var xjx=new xujianxing('徐健行');
+			xjx.zx()
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
